@@ -73,9 +73,7 @@ RUN ninja
 ### Configure environment variables for Mitsuba 2
 WORKDIR /root/Mitsuba2_Install/mitsuba2
 ENV BUILD_DIR build
-ENV MITSUBA_PATH="/root/Mitsuba2_Install/mitsuba2"
-ENV PYTHON_PATH="/root/Mitsuba2_Install/mitsuba2/dist/python:/root/Mitsuba2_Install/mitsuba2/build/dist/python:$PYTHONPATH"
-ENV PATH="/root/Mitsuba2_Install/mitsuba2/dist:/root/Mitsuba2_Install/mitsuba2/build/dist:$PATH"
+RUN echo 'source /root/Mitsuba2_Install/mitsuba2/setpath.sh' >> ~/.bashrc
 
 ### Reduce image size
 RUN apt-get clean \
