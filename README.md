@@ -90,7 +90,7 @@ Dockerfileをビルドする際には，build_dockerimage.shを実行します�
 
 build_dockerimage.shの使用方法は以下を参考にしてください．
 
-Mitsuba v2.2.0の環境構築を行う mitsuba_base:v2.2.0の場合
+Mitsuba v2.2.0の環境構築を行う mitsuba_base:v2.2.0の場合
 ```
 ./build_dockerimage.sh v2.2.0
 ```

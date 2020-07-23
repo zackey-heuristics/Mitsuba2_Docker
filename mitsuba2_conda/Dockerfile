@@ -85,9 +85,12 @@ RUN apt-get clean \
 ENV CC clang-9
 ENV CXX clang++-9
 
+### Set mitsuba version argument
+ARG VER_MITSUBA
+
 ### Install Mitsuba 2
 WORKDIR /root/Mitsuba2_Install
-RUN git clone https://github.com/mitsuba-renderer/mitsuba2.git
+RUN git clone https://github.com/mitsuba-renderer/mitsuba2.git -b ${VER_MITSUBA} --depth 1
 WORKDIR /root/Mitsuba2_Install/mitsuba2
 RUN git submodule update --init --recursive
 WORKDIR /root/Mitsuba2_Install/mitsuba2/build
