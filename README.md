@@ -2,7 +2,11 @@
 
 This repository has a dockerfile for [Mitsuba 2](https://github.com/mitsuba-renderer/mitsuba2).
 
-## How to Use
+Please check the following docker hub to see which version of Mitsuba this Dockerfile supports.  
+https://hub.docker.com/r/zigzagzackey/mitsuba2_base  
+https://hub.docker.com/r/zigzagzackey/mitsuba2_conda  
+
+## How to Use Docker Image
 
 ### English
 This section explains how to use mitsuba2_base:v2.1.0, which is a basic Docker configuration.  
@@ -50,7 +54,7 @@ Docker imageを実行して，コンテナを立ち上げる場合は，以下�
 docker run -it zigzagzackey/mitsuba2_base:v2.1.0
 ```
 
-mitsuba 2のサンプルを実行したいときは，以下の手順を踏みましょう．
+mitsuba 2のサンプルを実行したいときは，以下の手順を行いましょう．
 1. [mitsuba-data](https://github.com/mitsuba-renderer/mitsuba-data)をクローンしてください．  
 
 2. 以下のコマンドを実行して，Dockerコンテナを立ち上げます．  
@@ -66,3 +70,27 @@ mitsuba hello.xml
 ```
 
 4. 終了
+
+## How to Build Docker Image
+
+### English
+
+Run build_dockerimage.sh when you build the Dockerfile.
+
+Please refer to the following to use build_dockerimage.sh.
+
+Mitsuba v2.2.0の環境構築を行う mitsuba_base:v2.2.0の場合
+```
+./build_dockerimage.sh v2.2.0
+```
+
+### Japanese
+
+Dockerfileをビルドする際には，build_dockerimage.shを実行します．
+
+build_dockerimage.shの使用方法は以下を参考にしてください．
+
+Mitsuba v2.2.0の環境構築を行う mitsuba_base:v2.2.0の場合
+```
+./build_dockerimage.sh v2.2.0
+```

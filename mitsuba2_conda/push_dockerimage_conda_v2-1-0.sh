@@ -1,1 +1,0 @@
-sudo docker push zigzagzackey/mitsuba2_conda:v2.1.0
