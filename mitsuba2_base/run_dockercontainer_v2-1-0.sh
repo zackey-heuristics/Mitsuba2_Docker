@@ -1,1 +1,0 @@
-sudo docker run -it -v /Users/zigzagzackey/workspace/mitsuba-data:/root/Mitsuba2_Install/mitsuba-data zigzagzackey/mitsuba2_base:v2.1.0

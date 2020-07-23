@@ -1,1 +1,0 @@
-sudo docker push zigzagzackey/mitsuba2_base:v2.1.0
